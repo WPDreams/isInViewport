@@ -77,14 +77,24 @@ The viewport selector is any valid jQuery selector.
 - `tolerance` defaults to `0`
 - `viewport` defaults to `window`
 
+###### Positive Tolerance
+If the element is within the {tolerance} value inside the top and bottom of the screen -> false
+
+![alt text](https://i.imgur.com/u67KctY.png)
+
+###### Negative Tolerance
+If the element is within the {tolerance} value beyond the top and bottom of the screen -> true
+
+![alt text](https://i.imgur.com/34mU0EP.png)
+
 ###### Example:
 ```javascript
 //example 1
-//the height of tolerance region is 100px from top of viewport
+//the height of tolerance region is 100px from top and bottom of the viewport
 $( 'div:in-viewport( 100 )' ).css( 'background-color', 'red' );
 
 //example 2
-//the height of tolerance region is (viewport.height - 100px) from top of viewport
+//the height of tolerance region is 100px from beyond top and bottom of the viewport
 $( 'div:in-viewport( -100 )' ).css( 'background-color', 'green' );
 
 //example 3
