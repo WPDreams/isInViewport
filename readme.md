@@ -79,12 +79,14 @@ The viewport selector is any valid jQuery selector.
 
 ###### Positive Tolerance
 If the element is within the {tolerance} value inside the top and bottom of the screen -> true
+
 Region --> Viewport - tolerance top and bottom
 
 ![alt text](https://i.imgur.com/u67KctY.png)
 
 ###### Negative Tolerance
 If the element is within the {tolerance} value beyond the top and bottom of the screen -> true
+
 Region --> Viewport + tolerance top and bottom
 
 ![alt text](https://i.imgur.com/34mU0EP.png)
